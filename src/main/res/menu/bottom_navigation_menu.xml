@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeNav"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item android:id="@+id/exploreNav"
+        android:title="Explore"
+        android:icon="@drawable/baseline_explore_24"/>
+    <item android:id="@+id/profileNav"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"/>
+    <item android:id="@+id/logInNav"
+        android:title="Log"
+        android:icon="@drawable/baseline_login_24"/>
+
+</menu>

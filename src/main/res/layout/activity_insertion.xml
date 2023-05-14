@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.job_management.InsertionFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="@string/tv_job_List_title"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_job_title"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/et_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/et_job_title"
+                android:layout_margin="5dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_job_category"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spin_job_category"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:entries="@array/job_category_options"
+                android:minWidth="200dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_job_budget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/tv_job_budget"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_job_budget"
+                        android:layout_width="155dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_job_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/tv_job_duration"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spin_job_duration"
+                            android:layout_width="125dp"
+                            android:layout_height="40dp"
+                            android:entries="@array/duration_options" />
+
+                        <EditText
+                            android:id="@+id/et_job_duration"
+                            android:layout_width="51dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="16dp"
+                            android:ems="10"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_job_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_job_location"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_job_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_job_location"
+                android:textSize="20sp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/tv_job_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_job_description"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_job_description"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:ems="10"
+                android:layout_margin="5dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_job_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:elevation="2dp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:stateListAnimator="@null"
+                android:text="@string/btn_job_post"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>

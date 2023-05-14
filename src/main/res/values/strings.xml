@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Job Quest</string>
+
+    <string name="txt_Application_for_selected_job">Application for the Selected Job</string>
+    <string name="txt_Name">Name: </string>
+    <string name="edt_Full_name">Full Name</string>
+    <string name="txt_age">Your age: </string>
+    <string name="txt_city">City: </string>
+    <string name="edt_city">Where do you live?</string>
+    <string name="payment_type">Preferred Payment Type: </string>
+    <string-array name="payment_types">
+        <item>Salary</item>
+        <item>Work Based Wage</item>
+    </string-array>
+    <string name="salary">Salary</string>
+    <string name="work_based_wage">Work Based Wage</string>
+    <string name="select_payment_type">Select Payment Type: </string>
+    <string name="expected_salary">Expected Salary: </string>
+    <string name="charging_rate_per_unit">Charging Rate per Unit: </string>
+    <string name="submit_button">Submit</string>
+
+    <string name="received_job_applications">Received Job Applications</string>
+    <string name="in_review">In Review</string>
+    <string name="accepted">Accepted</string>
+    <string name="cancel">Cancel</string>
+    <string name="expected_pay_rate">Estimated Total Cost (LKR): </string>
+    <string name="paymentType_tv">Preferred Payment Type: </string>
+    <string name="status_hint">Status</string>
+    <string-array name="status_options">
+        <item>In Review</item>
+        <item>Accepted</item>
+    </string-array>
+    <string name="proceed_button">Proceed</string>
+    <string name="update_button">Update Status</string>
+    <string name="cancel_button">Cancel</string>
+
+    <string name="title_sent_applications">Applied Jobs</string>
+    <string name="menu_sent_applications">Sent Applications</string>
+    <string name="job_title">Job Title:</string>
+    <string name="job_budget">Budget:</string>
+    <string name="job_poster">Posted By:</string>
+    <string name="job_status">Status</string>
+    <string name="job_cancel">Cancel</string>
+    <string name="job_cancel_confirmation">Are you sure you want to cancel this job application?</string>
+    <string name="job_cancel_ok">Yes</string>
+    <string name="job_cancel_cancel">No</string>
+    <string name="job_cancelled">Cancelled</string>
+    <string name="job_cancel_failed">Failed to cancel job application</string>
+
+    <string-array name="userTypesSelection">
+        <item>Employee</item>
+        <item>Employer</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <string name="tv_job_title">Job Title:</string>
+    <string name="et_job_title">Job Title</string>
+    <string name="tv_job_category">Job Category:</string>
+    <string name="spin_job_category">Job Category</string>
+    <string name="tv_job_budget">Budget:</string>
+    <string name="et_job_budget">Budget</string>
+    <string name="tv_job_duration">Duration:</string>
+    <string name="spin_job_duration">Duration</string>
+    <string name="et_job_duration">Duration</string>
+    <string name="tv_job_location">Job Location:</string>
+    <string name="et_job_location">Job Location</string>
+    <string name="tv_job_description">Tell us more about your job:</string>
+    <string name="et_job_description">Tell us more about your job</string>
+
+    <string name="tv_job_List_title">Post a New Job</string>
+    <string name="tv_job_edit_title">Edit Job Deaits</string>
+    <string name="tv_job_posted_title">Posted Job</string>
+    <string name="tv_job_Listed_title">Listed Jobs</string>
+
+    <string name="btn_job_post">Post Job</string>
+    <string name="btn_job_update">Update</string>
+    <string name="btn_job_delete">Delete</string>
+    <string name="btn_job_apply">Apply</string>
+    <string name="btn_job_edit">Edit</string>
+    <string name="job_details">Job Details</string>
+    <string-array name="duration_options">
+        <item>Days</item>
+        <item>Hours</item>
+    </string-array>
+    <string-array name="job_category_options">
+        <item>Painting</item>
+        <item>Carpentry</item>
+        <item>Constructions</item>
+        <item>House/Office Cleaning</item>
+        <item>Hotels &amp; Hospitality</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sentApplicationItemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_shadow"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sentApplicationItemJobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/job_title"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sentApplicationItemJobBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/job_budget"
+
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sentApplicationItemJobPoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/job_poster"
+
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sentApplicationItemStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:text="@string/job_status"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sentApplicationItemCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/red"
+        android:padding="8dp"
+        android:text="@string/job_cancel"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

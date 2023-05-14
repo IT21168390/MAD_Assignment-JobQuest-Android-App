@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txt_Application_for_selected_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:text="@string/txt_Application_for_selected_job"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_Name"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/edt_Full_name"
+            android:layout_margin="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_age"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_city"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edt_city"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/select_payment_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_payment_type"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/payment_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/payment_types"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:id="@+id/salary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edit_text_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/expected_salary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/work_based_wage_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edit_text_charging_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/charging_rate_per_unit" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kelly_green"
+            android:layout_marginTop="100dp" />
+    </LinearLayout>
+
+</ScrollView>

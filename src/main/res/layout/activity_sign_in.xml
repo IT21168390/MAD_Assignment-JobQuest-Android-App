@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    tools:context=".activities.SignInActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="210dp"
+        android:layout_height="133dp"
+        app:srcCompat="@drawable/job_quest_low_resolution_logo_color_on_transparent_background" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:hint="Your Email"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Your Password"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Sign In"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textViewNotSignedUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="Don't have an account? Sign Up"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+</LinearLayout>

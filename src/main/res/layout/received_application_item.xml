@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/bg_border_shadow"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/age_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@id/name_textview"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:textColor="@color/black" />
+    <TextView
+        android:id="@+id/city_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age_textview"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/job_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/kelly_green"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/paymentType_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/job_tv"
+        android:layout_marginTop="8dp"
+        android:text="@string/paymentType_tv"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/payment_type_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/job_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/expected_salary_or_wage_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_type_textview"
+        android:layout_marginTop="8dp"
+        android:text="@string/expected_pay_rate"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/expectedRate_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentType_textview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <Spinner
+        android:id="@+id/status_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/expected_salary_or_wage_rate"
+        android:layout_marginTop="8dp"
+        android:entries="@array/status_options" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+    android:id="@+id/proceed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:text="@string/proceed_button"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateStatus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_spinner"
+        android:textColor="@color/white"
+        android:text="@string/update_button"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancel_button"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_spinner"
+        android:layout_alignParentEnd="true"
+
+        android:textColor="@color/white"
+        android:text="@string/cancel"
+        android:textStyle="bold"
+        android:backgroundTint="@color/red" />
+
+</RelativeLayout>

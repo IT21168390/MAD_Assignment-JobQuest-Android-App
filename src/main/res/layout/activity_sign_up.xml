@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupbackground"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activities.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="281dp"
+        android:layout_height="116dp"
+        app:srcCompat="@drawable/job_quest_low_resolution_logo_color_on_transparent_background" />
+
+    <LinearLayout
+        style="@style/CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#72FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editTextSignUpPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextSignUpEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/userTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:entries="@array/userTypesSelection"
+            android:padding="13sp"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/textViewAlreadySignedUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="Already have an account? Sign In"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

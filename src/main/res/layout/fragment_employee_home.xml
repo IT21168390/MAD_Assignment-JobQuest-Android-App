@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_background_gradient_lights"
+    android:orientation="vertical"
+    tools:context=".fragments.EmployeeHomeFragment">
+
+    <ImageView
+        android:id="@+id/headerImage"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/job_quest_low_resolution_logo_color_on_transparent_background" />
+
+    <TextView
+        android:id="@+id/employeeHomeWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Welcome Member!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="32sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employeeHomeWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="24dp"
+        app:cardBackgroundColor="#75FFFFFF"
+        app:contentPadding="10dp">
+
+        <TextView
+            android:id="@+id/textViewApplicationsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Applied Jobs: "
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewApplicationsCountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:layout_toEndOf="@id/textViewApplicationsCount"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewAcceptedApplicationsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewApplicationsCount"
+            android:layout_marginTop="75dp"
+            android:text="Accepted Amount: "
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewAcceptedAmountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewApplicationsCountValue"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="75dp"
+            android:layout_toEndOf="@id/textViewAcceptedApplicationsCount"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnViewSentApplications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Check Statuses"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnContactFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnViewSentApplications"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/greenYellow"
+        android:text="Get Connected"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+</RelativeLayout>
