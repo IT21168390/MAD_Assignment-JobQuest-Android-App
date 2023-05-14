@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "486513425699",
+    "firebase_url": "https://job-quest-a30b2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "job-quest-a30b2",
+    "storage_bucket": "job-quest-a30b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486513425699:android:f3cc06e18b709eee042096",
+        "android_client_info": {
+          "package_name": "com.example.jobquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486513425699-ln4qqvte0d5lh91em8r7i1h9ljtdeur8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_bdFpsLHKCWo4u0Mi6wkjO6-4M6wEm6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486513425699-ln4qqvte0d5lh91em8r7i1h9ljtdeur8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
